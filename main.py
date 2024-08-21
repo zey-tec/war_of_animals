@@ -5,7 +5,7 @@ import random
 MATRIX_SIZE = 10
 
 
-class AnimaL:
+class  AnimaL: #
     def __init__(self, species, step_speed, strenght, age):
         self.species = species
         self.step_speed = step_speed
@@ -171,10 +171,10 @@ def war_of_animals(animals):
         elif fish and dinosaur:
             survived_ones.append(fish)
        # elif len(group_of_animals) == 2:
-        #    survived_ones.remove(group_of_animals[1])
+        #    group_of_animals.remove(group_of_animals[0])
         else:
             survived_ones.append(max(group_of_animals, key=lambda AnimaL: AnimaL.strength))
-        #print("savaş")
+        print("savaş")
 
     return survived_ones
 
